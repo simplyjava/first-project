@@ -1,1 +1,14 @@
-<p>address-card works!</p>
+<div>
+
+    <h1>My User Details </h1>
+    <p>Name :  {{user.name}}</p>
+    <p>City :  {{user.city}}</p>
+    <p>Title : {{user.title}}</p>
+    
+     <div *ngIf="user.phone.length > 0"> Phone : 
+     
+     <p *ngFor="let phoneNumbers of user.phone">{{phoneNumbers}}</p>
+
+    </div>
+</div>
+
