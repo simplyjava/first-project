@@ -14,6 +14,6 @@ export class AppComponent {
     this.user.name ='Sandeep';
     this.user.city ='Hyderabad';
     this.user.title ='Lead';
-    this.user.phone=['9949283691']
+    this.user.phone=['9949283691','9849605924']
   }
 }
