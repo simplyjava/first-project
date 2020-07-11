@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DisplayComponent } from './display/display.component';
+import { DisplayService } from './display.service';
 
 
 
@@ -9,6 +10,7 @@ import { DisplayComponent } from './display/display.component';
   imports: [
     CommonModule
   ],
-  exports:[DisplayComponent]
+  exports:[DisplayComponent],
+  providers:[DisplayService]
 })
 export class ViewModule { }

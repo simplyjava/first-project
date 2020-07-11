@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { AddressCardComponent } from './address-card/address-card.component';
 import { ViewModule } from './view/view.module';
+import { DisplayService } from './view/display.service';
+import { HttpClientModule } from  '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import { ViewModule } from './view/view.module';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ViewModule
+    ViewModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
