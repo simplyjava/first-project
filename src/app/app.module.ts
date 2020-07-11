@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloWorldComponent } from './hello-world/hello-world.component';
 import { AddressCardComponent } from './address-card/address-card.component';
+import { ViewModule } from './view/view.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { AddressCardComponent } from './address-card/address-card.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ViewModule
   ],
   providers: [],
   bootstrap: [AppComponent]

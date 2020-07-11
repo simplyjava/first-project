@@ -3,13 +3,21 @@
     <h1>My User Details </h1>
     <p>Name :  {{user.name}}</p>
     <p>City :  {{user.city}}</p>
-    <p>Title : {{user.title}}</p>
     
-     <div *ngIf="user.phone.length > 0"  > 
-    <p>Phone : <span *ngFor=" let phoneNumbers of user.phone ; let isLast=last"> {{phoneNumbers}} {{isLast ? '' : ','}}  </span>   </p>
-     
-     
+    <div *ngIf="!isCollapsed">
+
+        <p>Title : {{user.title}}</p>
+    
+        <div *ngIf="user.phone.length > 0"  > 
+       <p>Phone : <span *ngFor=" let phoneNumbers of user.phone ; let isLast=last"> {{phoneNumbers}} {{isLast ? '' : ','}}  </span>   </p>
+        
+        
+   
+       </div>
+       
 
     </div>
+    <button (click)="expnadCollapse()">{{isCollapsed ? 'Expand' : 'Collapse'}}</button>
+    
 </div>
 
