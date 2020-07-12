@@ -7,7 +7,7 @@ export class DisplayService {
 
   constructor() { }
 
-    printToConsole( value:String){
-      console.log("printed"+value);
+    printToConsole( value:any){
+      console.log(value);
     }
 }
